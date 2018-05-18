@@ -8,6 +8,10 @@
     <title>playlists</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+     <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -54,6 +58,14 @@
            
         <div id="displayPlaylists">
         
+        <div id="commentForm">
+                    <form action="#">
+                      <h2>Leave a comment</h2>
+                       <input id="commentPlaylistId" type="text" placeholder="Playlist id"/>
+                        <input id="commentUser" placeholder="Username" type="text" required />
+                        <textarea id="commentOnPlaylist" placeholder="Comment" required></textarea>
+                         <button id="submitComment" value="Add New Comment" required>Add new comment</button>
+                    </form>
         </div>
         </div>
         <div id="addNewWrapper">

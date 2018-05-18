@@ -87,3 +87,40 @@ deleteButtonPlaylist.addEventListener('click', function (e) {
     e.preventDefault()
 });
 
+
+const commentPlaylistId = document.getElementById('commentPlaylistId');
+const submitComment = document.getElementById("submitComment");
+
+function addComment(){
+    
+const commentInputId = commentPlaylistId.value;
+
+
+let: comment = {
+    playlist:commentPlaylistId.value,
+    body: commentOnPlaylist.value,
+    username: commentUser.value,
+}
+
+ fetch(`https://folksa.ga/api/playlists/${commentInputId}/comments?key=flat_eric`,{
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(comment)
+    })
+    .then((response) => response.json())
+    .then((playlist) => {
+    console.log(playlist);
+  });
+
+    }
+
+
+
+submitComment.addEventListener('click', function (e) {  
+    addComment()
+        .then(console.log)
+    e.preventDefault();
+});

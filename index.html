@@ -10,6 +10,10 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <!--     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">-->
     <link rel="stylesheet" href="css/style.css">
+     <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
 
 </head>
 
@@ -62,6 +66,15 @@
                 <h3>The newest of the newest of the hottest Music</h3>
             </div>
             <div id="display"></div>
+                 <div id="commentForm">
+                    <form action="#">
+                      <h2>Leave a comment</h2>
+                       <input id="commentPlaylistId" type="text" placeholder="Playlist id"/>
+                        <input id="commentUser" placeholder="Username" type="text" required />
+                        <textarea id="commentOnPlaylist" placeholder="Comment" required></textarea>
+                         <button id="submitComment" value="Add New Comment" required>Add new comment</button>
+                    </form>
+        </div>
             <!--
         <div id="topRated"></div>
          <div id="displayPlaylists"></div>
