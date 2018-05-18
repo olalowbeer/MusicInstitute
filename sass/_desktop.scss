@@ -50,20 +50,54 @@ nav > div.hero > h2{
     margin: 3px;
 }
 
+.myNav{
+    display: none;
+}
+.search-container {
+  position: absolute;
+  right: 2rem ;
+  top: 2rem;
+
+
 
 body > header > nav > span{
     display: none;
 }
 
 
-.overlay .closebtn {
+
+  .search-input{
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 2rem;
+    right: 5rem;
+    height: 0.5rem;
+    width: 0;
+    border: 1px solid transparent;
+    transition: all .2s ease;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    background-color: white;
+    opacity: 0;
+    color: #fff;
+    &:focus {
+      outline: none;
+      color: black;
+    }
+    }
+  .open {
+    width: 10rem;
+    border: 1px solid #36D96C;
+    transition: all 1s ease;
+    border-radius: 2%;
+    opacity: 1;
+  }
 }
 
 .menu-btn {
+
+   display:none;
+
     
   background:url(../images/hamburgerWhite.png) no-repeat;
   background-size: 50px 50px;
@@ -71,12 +105,9 @@ body > header > nav > span{
   position:absolute;
     margin:30px;
 
- 
-}
-.menu-btn:hover{
-  cursor: pointer;
-}
 
+
+}
 
 #topRated{
    
