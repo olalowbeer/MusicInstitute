@@ -52,9 +52,7 @@ nav > div.hero > h2{
     padding: 0px;
     margin: 3px;
 }
-ul{
-    display: none;
-}
+
 
 #textDiv h3 {
     font-size: 1.1em;
@@ -96,7 +94,10 @@ ul{
     text-align: center;
     margin-top: 30px;
 }
-.overlayContent > li{
+.showdesktop{
+    display: none;
+}
+.overlayContent > ul > li{
     list-style-type: none;
     padding: 10px;
     margin: 20px;
@@ -110,7 +111,7 @@ ul{
         padding-right: 40px;
     
     }
-    .overlayContent > li:hover{
+    .overlayContent > ul > li:hover{
         color: #D45756;
         cursor: pointer;
     
@@ -277,29 +278,6 @@ ul{
     }
 }
 
-#arrow {
-    //display: flex;
-    //justify-content: center;
-    cursor: pointer;
-    bottom: 20px;
-    animation-name: bouncey;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out; //position: absolute;
-    height: 50px;
-    width: 100%;
-    margin-bottom: 50px;
-
-
-}
-
-#arrow img {
-    height: 70px;
-    width: 100px;
-
-}
-
 /*******************topratedfrontpage************/
 
 #topRated {
@@ -367,6 +345,11 @@ body > header > nav > div.hero > h1 {
     background-color: #F1452A;
     object-fit: cover;
 
+}
+.latestPlaylists img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -554,6 +537,12 @@ body {
     background-color: white;
     color: #222222;
 
+}
+
+.latestAlbum img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 /*************addstuff*************/

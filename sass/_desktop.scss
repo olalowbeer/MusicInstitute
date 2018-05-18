@@ -1,5 +1,5 @@
 .hero {
-    height:30vh;
+    height:25vh;
      text-align: center;    
 }
 .hero img{
@@ -17,14 +17,7 @@ h1{
     padding-top:16px;
     color:whitesmoke;
 }
-.desktopnav {
-    padding: 10px;
-    margin: 1px;
-    text-align: center;
-    list-style-type: none;
-    font-size: 0.8em;
 
-}
 #textDiv > h2{
     font-size: 3em;
     font-family: pacifico;
@@ -41,19 +34,6 @@ h1{
     
 }
 
-ul{
-    display: block;
-}
-
-li{
-    display: inline-block;
-    font-family: Andale Mono, monospace;
-    color: whitesmoke;
-    padding-top: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-
-}
 li:hover{
     color: #D45756;
     cursor: pointer;
@@ -69,62 +49,12 @@ nav > div.hero > h2{
     padding: 0px;
     margin: 3px;
 }
-.myNav{
-    display: none;
-}
-.overlay {
-    display: none;
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.9); 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; 
-}
-.overlayContent {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    position: relative;
-    top: 25%; 
-    width: 100%;
-    text-align: center; 
-    margin-top: 30px;
-    
-}
+
+
 body > header > nav > span{
     display: none;
 }
 
-.overlayContent a {
-  position: relative;
-    margin:70px;
-}
-.overlayContent a:hover,
-.overlayContent a:focus,
-.overlayContent a:active {
-  cursor: pointer;
-}
-.overlayContent a:hover:after,
-.overlayContent a:focus:after,
-.overlayContent a:active:after {
-  width: 100%;
-}
-.overlayContent a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  height: 3px;
-  background-color: white;
-  width: 0;
-  -webkit-transition: width 0.4s;
-  transition: width 0.4s;
-}
 
 .overlay .closebtn {
     position: absolute;
@@ -132,8 +62,9 @@ body > header > nav > span{
     right: 45px;
     font-size: 60px;
 }
+
 .menu-btn {
-  display: none;
+    
   background:url(../images/hamburgerWhite.png) no-repeat;
   background-size: 50px 50px;
   height:50px; width:50px;
@@ -312,20 +243,10 @@ body{
 }
 
 
-.albumInfo{
-    //padding-top: 140px;
-    //padding-left: 40px;
-    //border: 1px solid white;
-    //width: 50%;
-    
-}
-
 .latestAlbum{
     padding-top: 80px;
     margin: 10px;
     text-align: center;
-    //padding-bottom: 100px;
-    //padding-top: 100px;
     background-color: white;
     color: #222222;
     //display: flex;
@@ -334,7 +255,6 @@ body{
 
 /***************Playlist?*******************/
 .eachPlaylist{
-//display:flex;
 justify-content: center;
     align-items:center;
     height:100vh;
