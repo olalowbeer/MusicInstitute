@@ -1,12 +1,65 @@
 .hero {
     background-color: #2A2B2B;
-    height:30vh;
-    background-size: cover;
+    height:25vh;
+    text-align: center;    
+
+    
+}
+.hero img{
+    height: 80px;
+    width: 50px;
+    padding-top: 10px;
 }
 
 input{
     border-radius: 20px;
     height: 20px;
+    
+}
+
+h1{
+    font-size:3.5em;
+    font-family: Pacifico;
+    text-align: center;
+    margin:0px;
+    padding-top:16px;
+    color:whitesmoke;
+}
+.desktopnav {
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 0.8em;
+
+}
+#textDiv > h2{
+    font-size: 3em;
+    font-family: pacifico;
+    margin: 0px;
+    
+
+    
+}
+
+nav > div.hero > h2{
+    font-size: 0.7em;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+    color: #D45756;
+    font-weight: 300;
+    padding: 0px;
+    margin: 3px;
+}
+ul{
+    display: none;
+}
+
+#textDiv h3 {
+    font-size: 1.1em;
+	text-align: center;
+    font-family: Andale Mono, monospace;
+
     
 }
 
@@ -26,7 +79,7 @@ input{
     left: 0;
     top: 0;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     /* Disable horizontal scroll */
     transition: 0.5s;
@@ -42,6 +95,28 @@ input{
     text-align: center;
     margin-top: 30px;
 }
+.overlayContent > li{
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.8em;
+        font-family: Andale Mono, monospace;
+        color: whitesmoke;
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    
+    }
+    .overlayContent > li:hover{
+        color: #D45756;
+        cursor: pointer;
+    
+        
+    }
+
+
 
 .overlay a {
     margin: 20px;
@@ -91,7 +166,7 @@ input{
 }
 
 .menu-btn {
-    background: url(../images/hamburger.png) no-repeat;
+    background: url(../images/hamburgerWhite.png) no-repeat;
     background-size: 50px 50px;
     display: block;
     height: 50px;
@@ -338,6 +413,8 @@ body > header > nav > div.hero > h1 {
 
 body{
     background-color: #F7F7F7;
+    padding: 0px;
+    margin: 0px;
     
 }
 #deleteform{
@@ -353,7 +430,15 @@ body{
 
 .line{
     margin: auto;
-    border-top: 3px solid green;
+}
+
+.desktopnav {
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 0.8em;
+
 }
 
 .formdiv {
