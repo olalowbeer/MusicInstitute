@@ -7,7 +7,9 @@ const albumGenre = document.getElementById("albumGenre");
 const albumArtist = document.getElementById("albumArtist");
 const albumReleaseDate = document.getElementById("albumReleaseDate");
 const albumSpotifyUrl = document.getElementById("albumSpotifyUrl");
-const albumImageLink = document.getElementById("albumImageLink");
+const albumImageLink = document.getElementById("albumImageLink");   
+const commentPlaylistId = document.getElementById('commentPlaylistId');
+const submitComment = document.getElementById("submitComment");
 
 //***********fetchest lates albums for frontpage*********//
 
@@ -162,6 +164,36 @@ const Fetch = {
 
 
     },
+    
+
+
+addComment: function (){
+    
+const commentInputId = commentPlaylistId.value;
+
+
+let: comment = {
+    playlist:commentPlaylistId.value,
+    body: commentOnPlaylist.value,
+    username: commentUser.value,
+}
+
+ fetch(`https://folksa.ga/api/playlists/${commentInputId}/comments?key=flat_eric`,{
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(comment)
+    })
+    .then((response) => response.json())
+    .then((playlist) => {
+    console.log(playlist);
+  });
+
+    },
+
+
 
     fetchAllArtists: function () {
 
@@ -413,11 +445,29 @@ const Controller = {
             })
 
         });
-    },
+    }
+    
+
 
 }
 
 
+
+//----- comment form popup -----//
+
+$(document).on("click", "#comment", function (event) {
+    var x = document.getElementById("commentForm");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+
+    }
+});
+
+$( "#closeWindow" ).click(function() {
+  $( "#commentForm" ).hide(1000);
+});
 
 
 // ------------------------ MENU SLIDER ------------------------  //
