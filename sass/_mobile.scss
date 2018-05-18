@@ -1,6 +1,6 @@
 .hero {
     background-color: #2A2B2B;
-    height:25vh;
+    height:200px;
     text-align: center;    
 
     
@@ -20,8 +20,8 @@ input {
 
 
 h1{
-    font-size:3.5em;
-    font-family: Pacifico;
+    font-size:2.7em;
+    font-family: futura;
     text-align: center;
     margin:0px;
     padding-top:16px;
@@ -63,9 +63,36 @@ nav > div.hero > h2{
     
 }
 
-#searchfield {
-    text-align: center;
-    font-family: Andale mono, monospace
+.search-container {
+
+  right: 2rem ;
+  top: 2rem;
+
+  .search-input{
+    top: 2rem;
+    right: 5rem;
+    height: 0.5rem;
+    width: 0;
+    border: 1px solid transparent;
+    transition: all .2s ease;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    background-color: white;
+    opacity: 0;
+    color: #fff;
+    &:focus {
+      outline: none;
+      color: black;
+    }
+    }
+  .open {
+    width: 10rem;
+    border: 1px solid #36D96C;
+    transition: all 1s ease;
+    border-radius: 2%;
+    opacity: 1;
+  }
 }
 
 
@@ -263,7 +290,7 @@ nav > div.hero > h2{
     }
 }
 
-.draw-border {
+.draw-border, #commentButton {
     @include btn-border-drawing(black, red, 2px, bottom, right);
 } //=== Button styling, semi-ignore
 .btn {
@@ -326,8 +353,7 @@ body > header > nav > div.hero > h1 {
 }
 
 #playlistSongs > p > span {
-    font-family: monospace;
-    background-color: yellow;
+    font-family: 'roboto';
 }
 
 
@@ -454,6 +480,7 @@ body {
     margin-bottom: 2px;
 
 
+
 }
 
 .latestAlbum h4 {
@@ -535,7 +562,7 @@ body {
 }
 
 .latestAlbum {
-    padding-top: 80px;
+    padding-top: 20px;
     text-align: center;
     margin: 10px;
     background-color: white;
@@ -711,6 +738,7 @@ body {
     margin: 10px;
     padding:5px;
     margin-top:80px;
+    border-radius:0px;
 }
 
 #commentOnPlaylist {
@@ -741,5 +769,17 @@ body {
 }
 #commentForm h2{
     color:white;
+}
+#commentButton{
+    margin-bottom:10px;
+    font-family: 'roboto';
+    padding: 7px 17px 7px 17px;
+    margin-bottom: 10%;
+    font-size: 0.7em;
+    background-color: transparent;
+    
+}
+#closeWindow{
+    border-style:none;
 }
 
