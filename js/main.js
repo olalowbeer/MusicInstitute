@@ -281,10 +281,10 @@ const View = {
               <img src="${playlists[i].coverImage}">
                <div id="playlistSongs">
                 <h3>${playlists[i].title}</h3>
-                <p><span> Songs: </br> </span> </p> 
+                <p><span> SONGS: </br> </span> </p> 
                 <h4>${allTracks}</h4>
               </div>
-              <button id="comment">Comment</button>
+              <button id="commentButton">COMMENT</button>
              </div>
            `;
         }
@@ -432,7 +432,7 @@ const Controller = {
         });
     },
     
-   searchArtist: function () {
+searchArtist: function () {
        const searchInput = document.getElementById('searchInput');
        
         searchInput.addEventListener('change', function () {
@@ -455,7 +455,7 @@ const Controller = {
 
 //----- comment form popup -----//
 
-$(document).on("click", "#comment", function (event) {
+$(document).on("click", "#commentButton", function (event) {
     var x = document.getElementById("commentForm");
     if (x.style.display === "none") {
         x.style.display = "flex";
@@ -469,6 +469,15 @@ $( "#closeWindow" ).click(function() {
   $( "#commentForm" ).hide(1000);
 });
 
+
+$(document).ready(function(){
+  var $searchIcon = $('.search-icon');
+  var $searchInput = $('.search-input');
+  
+  $searchIcon.click(function(){
+    $searchInput.toggleClass('open');
+  });
+});
 
 // ------------------------ MENU SLIDER ------------------------  //
 
