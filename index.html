@@ -10,6 +10,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <!--     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">-->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
 
 </head>
@@ -28,15 +29,14 @@
                   
                     <div class="overlayContent">
                         <ul>
-                        <li id="artistclick" onclick="closeNav()">Artists</li>
-                        <li id="albumsclick"onclick="closeNav()">Albums</li>
-                        <li id="playlistclick"onclick="closeNav()">Playlists</li>
-                          
-                       <form class="search-container">
-                        <input type="text" id="searchInput" name="searchField" class="search-input" />
-                        <label for="search" class="search-icon"><img src="images/baseline-search-24px.svg"></label>
-                    </form>
+                        <li id="artistclick" onclick="closeNav()">ARTISTS</li>
+                        <li id="albumsclick"onclick="closeNav()">ALBUMS</li>
+                        <li id="playlistclick"onclick="closeNav()">PLAYLISTS</li>
                     </ul>
+                    <form class="search-container">
+                        <input type="text" id="searchInput" name="searchField" class="search-input"onchange="closeNav()" />
+                        <label for="search" class="search-icon"><img src="images/baseline-search-24px%20(1).svg"></label>
+                    </form>
                     </div>
                 
 
@@ -58,7 +58,7 @@
 
             <div id="latest">
                 <h2>LATEST ADDED STUFF</h2>
-                <h3>The newest of the newest of the hottest Music</h3>
+            
             </div>
             <div id="display"></div>
             <div id="commentForm">
