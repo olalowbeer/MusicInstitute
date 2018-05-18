@@ -432,7 +432,7 @@ const Controller = {
         });
     },
     
-   searchArtist: function () {
+searchArtist: function () {
        const searchInput = document.getElementById('searchInput');
        
         searchInput.addEventListener('change', function () {
@@ -469,6 +469,15 @@ $( "#closeWindow" ).click(function() {
   $( "#commentForm" ).hide(1000);
 });
 
+
+$(document).ready(function(){
+  var $searchIcon = $('.search-icon');
+  var $searchInput = $('.search-input');
+  
+  $searchIcon.click(function(){
+    $searchInput.toggleClass('open');
+  });
+});
 
 // ------------------------ MENU SLIDER ------------------------  //
 

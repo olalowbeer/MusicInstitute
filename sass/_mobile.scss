@@ -18,6 +18,7 @@ input {
 
 }
 
+
 h1{
     font-size:3.5em;
     font-family: Pacifico;
@@ -70,7 +71,7 @@ ul{
 }
 
 
-.overlay {
+.overlay, .overlay2 {
     height: 100%;
     width: 0;
     position: fixed;
@@ -86,7 +87,7 @@ ul{
     transition: 0.5s;
 }
 
-.overlayContent {
+.overlayContent, .overlayContent2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -96,7 +97,7 @@ ul{
     text-align: center;
     margin-top: 30px;
 }
-.overlayContent > li{
+.overlayContent > li,.overlayContent2 > li{
     list-style-type: none;
     padding: 10px;
     margin: 20px;
@@ -110,7 +111,7 @@ ul{
         padding-right: 40px;
     
     }
-    .overlayContent > li:hover{
+    .overlayContent > li:hover,     .overlayContent2 > li:hover{
         color: #D45756;
         cursor: pointer;
     
@@ -177,7 +178,6 @@ ul{
 
 
 }
-
 
 #topRated {
     height: 100vh;

@@ -10,10 +10,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <!--     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">-->
     <link rel="stylesheet" href="css/style.css">
-     <script
-  src="https://code.jquery.com/jquery-3.3.1.slim.js"
-  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -25,12 +22,15 @@
                 <h1>Music</h1>
                 <h2>The illest music right now</h2>
                 <ul class="desktopnav">
-                    <li id="artistclick">Artists</li>
-                    <li id="albumsclick">Albums</li>
-                    <li id="playlistclick">Playlists</li>
+                    <li id="artistclick">ARTISTS</li>
+                    <li id="albumsclick">ALBUMS</li>
+                    <li id="playlistclick">PLAYLISTS</li>
 
-                    <li><input name="searchField" type="text" id="searchInput" placeholder="search for shiet.."></li>
-
+               
+                <form class="search-container">
+                        <input type="text" id="searchInput" name="searchField" class="search-input" />
+                        <label for="search" class="search-icon"><img src="images/baseline-search-24px.svg"></label>
+                    </form>
                 </ul>
             </div>
 
@@ -45,10 +45,8 @@
                 <div class="overlayContent">
                     <li id="artistclick">Artists</li>
                     <li id="albumsclick">Albums</li>
-                    <li id="playlistclick">Playlists</li>
-
-                    <li><input name="searchField" type="text" id="searchInput" placeholder="search for shiet.."></li>
-
+                    <li id="playlistclick">Playlists</li>  
+                        <input type="text" id="searchInput" name="searchField" class="search-input" />
                 </div>
             </div>
 
@@ -69,16 +67,16 @@
                 <h3>The newest of the newest of the hottest Music</h3>
             </div>
             <div id="display"></div>
-                 <div id="commentForm">
-                    <form action="#">
-                     <button id ="closeWindow"><img src="images/close-24px.svg"></button>
-                      <h2>Leave a comment</h2>
-                       <input id="commentPlaylistId" type="text" placeholder="Playlist id"/>
-                        <input id="commentUser" placeholder="Username"  />
-                        <textarea id="commentOnPlaylist" placeholder="Comment"></textarea>
-                         <button id="submitComment" value="Add New Comment" >Add new comment</button>
-                    </form>
-        </div>
+            <div id="commentForm">
+                <form action="#">
+                    <button id="closeWindow"><img src="images/close-24px.svg"></button>
+                    <h2>Leave a comment</h2>
+                    <input id="commentPlaylistId" type="text" placeholder="Playlist id" />
+                    <input id="commentUser" placeholder="Username" />
+                    <textarea id="commentOnPlaylist" placeholder="Comment"></textarea>
+                    <button id="submitComment" value="Add New Comment">Add new comment</button>
+                </form>
+            </div>
             <!--
         <div id="topRated"></div>
          <div id="displayPlaylists"></div>
@@ -117,8 +115,8 @@
                     <input id="deletePlaylist" type="text" name="name">
                 </li>
                 <li class="deleteButtonList">
-                <button type="button" id="deleteButtonPlaylist">Delete</button>
-                 </li>
+                    <button type="button" id="deleteButtonPlaylist">Delete</button>
+                </li>
             </form>
             <form id="addForm">
                 <h1>Add New Album</h1>
@@ -153,8 +151,8 @@
                     <button id="submitAlbum" value="Add New">Add Album</button>
                 </li>
                 <li>
-                <label for="deleteAlbum">Delete Album with ID</label>
-                <input id="deleteAlbum" type="text" name="name">
+                    <label for="deleteAlbum">Delete Album with ID</label>
+                    <input id="deleteAlbum" type="text" name="name">
                 </li>
                 <button type="button" id="deleteButtonAlbum">Delete</button>
             </form>
@@ -193,12 +191,12 @@
                     <button id="submitArtist" value="Add new">Add Artist</button>
                 </li>
                 <li>
-                <label for="deleteArtist">Delete Artist with ID</label>
-                <input id="deleteArtist" type="text" name="name">
+                    <label for="deleteArtist">Delete Artist with ID</label>
+                    <input id="deleteArtist" type="text" name="name">
                 </li>
                 <li class="deleteButtonList">
-                <button type="button" id="deleteButtonArtist">Delete</button>
-            </li>
+                    <button type="button" id="deleteButtonArtist">Delete</button>
+                </li>
             </form>
 
 

@@ -1,6 +1,5 @@
    //----PLAYLIST -----//
-    
-        
+           
 const playlistTitle = document.getElementById("playlistTitle");
 const playlistTracks = document.getElementById("playlistTracks");
 const playlistGenre = document.getElementById("playlistGenre")

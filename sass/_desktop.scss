@@ -72,80 +72,43 @@ nav > div.hero > h2{
 .myNav{
     display: none;
 }
-.overlay {
-    display: none;
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.9); 
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; 
-}
-.overlayContent {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    position: relative;
-    top: 25%; 
-    width: 100%;
-    text-align: center; 
-    margin-top: 30px;
-    
-}
-body > header > nav > span{
-    display: none;
-}
-
-.overlayContent a {
-  position: relative;
-    margin:70px;
-}
-.overlayContent a:hover,
-.overlayContent a:focus,
-.overlayContent a:active {
-  cursor: pointer;
-}
-.overlayContent a:hover:after,
-.overlayContent a:focus:after,
-.overlayContent a:active:after {
-  width: 100%;
-}
-.overlayContent a:after {
-  content: "";
+.search-container {
   position: absolute;
-  left: 0;
-  bottom: -3px;
-  height: 3px;
-  background-color: white;
-  width: 0;
-  -webkit-transition: width 0.4s;
-  transition: width 0.4s;
-}
+  right: 2rem ;
+  top: 2rem;
 
-.overlay .closebtn {
+  .search-input{
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 2rem;
+    right: 5rem;
+    height: 0.5rem;
+    width: 0;
+    border: 1px solid transparent;
+    transition: all .2s ease;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    background-color: white;
+    opacity: 0;
+    color: #fff;
+    &:focus {
+      outline: none;
+      color: black;
+    }
+    }
+  .open {
+    width: 10rem;
+    border: 1px solid #36D96C;
+    transition: all 1s ease;
+    border-radius: 2%;
+    opacity: 1;
+  }
 }
 .menu-btn {
-  display: none;
-  background:url(../images/hamburgerWhite.png) no-repeat;
-  background-size: 50px 50px;
-  height:50px; width:50px;
-  position:absolute;
-    margin:30px;
+   display:none;
 
- 
-}
-.menu-btn:hover{
-  cursor: pointer;
-}
 
+}
 
 #topRated{
    
