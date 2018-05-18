@@ -19,35 +19,29 @@
         <nav>
             <span class="menu-btn" onclick="openNav()"></span>
             <div class="hero"><a href="index.html"><img src="images/skruttvit.png"></a>
-                <h1>Music</h1>
+                <h1>Music Instituto</h1>
                 <h2>The illest music right now</h2>
-                <ul class="desktopnav">
-                    <li id="artistclick">ARTISTS</li>
-                    <li id="albumsclick">ALBUMS</li>
-                    <li id="playlistclick">PLAYLISTS</li>
+              
+                <div id="myNav" class="overlay">
 
-               
-                <form class="search-container">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  
+                    <div class="overlayContent">
+                        <ul>
+                        <li id="artistclick" onclick="closeNav()">Artists</li>
+                        <li id="albumsclick"onclick="closeNav()">Albums</li>
+                        <li id="playlistclick"onclick="closeNav()">Playlists</li>
+                          
+                       <form class="search-container">
                         <input type="text" id="searchInput" name="searchField" class="search-input" />
                         <label for="search" class="search-icon"><img src="images/baseline-search-24px.svg"></label>
                     </form>
-                </ul>
+                    </ul>
+                    </div>
+                
+
             </div>
 
-
-            <div id="myNav" class="overlay">
-
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-
-
-                <!-- Overlay content -->
-                <div class="overlayContent">
-                    <li id="artistclick">Artists</li>
-                    <li id="albumsclick">Albums</li>
-                    <li id="playlistclick">Playlists</li>  
-                        <input type="text" id="searchInput" name="searchField" class="search-input" />
-                </div>
             </div>
 
             <!-- Use any element to open/show the overlay navigation menu -->
@@ -77,11 +71,7 @@
                     <button id="submitComment" value="Add New Comment">Add new comment</button>
                 </form>
             </div>
-            <!--
-        <div id="topRated"></div>
-         <div id="displayPlaylists"></div>
-         <div id="albumList"></div>
--->
+
         </div>
         <div id="addNewWrapper">
             <form id="addForm">
