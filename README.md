@@ -1,6 +1,6 @@
 # OlaDaniHanna: MusicInstitute
 
-[GitHub Pages]() / [GitHub Repository](https://github.com/olalowbeer/MusicInstitute.git)
+[GitHub Pages](https://olalowbeer.github.io/MusicInstitute/) / [GitHub Repository](https://github.com/olalowbeer/MusicInstitute.git)
 
 ## Technologies
 - SASS
