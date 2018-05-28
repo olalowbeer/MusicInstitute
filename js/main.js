@@ -216,6 +216,11 @@ const View = {
 
     displayArtistsFunction: function (artists) {
         const displayArtistsElement = document.getElementById("display");
+        const displaylatest = document.getElementById("latest");
+
+        let latest = '';
+        latest += `
+        <h2> ARTISTS </h2>`
         let htmlBlock = '';
         for (i = 0; i < artists.length; i++) {
 
@@ -235,11 +240,18 @@ const View = {
 
 
         displayArtistsElement.innerHTML = htmlBlock;
+        displaylatest.innerHTML = latest;
     },
 
     /***************************** Albums *****************************/
     displayAlbumsFunction: function (albums) {
         const displayAlbumsElement = document.getElementById("display");
+        const displaylatest = document.getElementById("latest");
+
+        let latest = '';
+        latest += `
+        <h2> LATEST ADDED ALBUMS </h2>`
+
         let htmlBlock = '';
         for (i = 0; i < albums.length; i++) {
 
@@ -259,12 +271,19 @@ const View = {
           `;
         }
         displayAlbumsElement.innerHTML = htmlBlock;
+        displaylatest.innerHTML = latest;
+
 
     },
 
     /***************************** Playlists *****************************/
     displayPlaylistsFunction: function (playlists) {
         const displayPlaylistsElement = document.getElementById("display");
+        const displaylatest = document.getElementById("latest");
+
+        let latest = '';
+        latest += `
+        <h2> PLAYLISTS </h2>`
         let htmlBlock = '';
         for (i = 0; i < playlists.length; i++) {
 
@@ -289,6 +308,8 @@ const View = {
            `;
         }
         displayPlaylistsElement.innerHTML = htmlBlock;
+        displaylatest.innerHTML = latest;
+
     },
 
     /***************************** Tracks *****************************/
