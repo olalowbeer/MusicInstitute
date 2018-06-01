@@ -1,22 +1,16 @@
-.hero {
-    height:130px;
-     text-align: center;    
-}
-.hero img{
-    height: 80px;
-    width: 50px;
-    padding-top: 10px;
-}
-
-
 
 h1{
     font-size:3.5em;
-    font-family: Futura;
     text-align: center;
     margin:0px;
     padding-top:16px;
     color:whitesmoke;
+}
+
+#scrollArrow img{
+    height:70px;
+    width:70px;
+    margin-top:50px;
 }
 
 #textDiv > h2{
@@ -33,6 +27,10 @@ h1{
     font-family: Andale Mono, monospace;
 
     
+}
+#punchline {
+    color:orangered;
+     font-family: 'Josefin Slab', serif;
 }
 
 li:hover{
@@ -182,7 +180,6 @@ body{
      background-color: #F6F6F6;
 }
 .contentalbums h2 {
-    font-family: pacifico;
 	text-align: center;
 }
 #albumList p {
@@ -260,10 +257,27 @@ li{
 font-size:1.5em;
 }
 
+
+#addForm {
+    max-width: 300px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 2px;
+    padding: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 #submitArtist:hover,
-#submitAlbum:hover{
+#submitAlbum:hover,
+#submitPlaylist:hover,
+#deleteButtonArtist:hover,
+#deleteButtonAlbum:hover,
+#deleteButtonPlaylist:hover{
 
     opacity: 0.6;
     color: white;
+}
+br{
+    display:none;
 }
 

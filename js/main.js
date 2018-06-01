@@ -508,6 +508,7 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+    scrollTo(document.getElementById("punchline"));
 }
 
 
@@ -525,7 +526,13 @@ function scrollTo(element) {
 document.getElementById("scrolldiv").addEventListener('click', () => {
   scrollTo(document.getElementById("addForm"));
 });
+document.getElementById("scrollArrow").addEventListener('click', () => {
+    scrollTo(document.getElementById("punchline"));
+});
 
+document.getElementById("scrollUp").addEventListener('click', () => {
+    scrollTo(document.getElementById("punchline"));
+});
 
 
 Fetch.fetchAllArtists();

@@ -1,11 +1,12 @@
-.hero {
-    height:130px;
-    background-size: cover;
-}
+
 h1{
     padding-left: 0px;
     font-size: 2.6em;
 
+}
+
+.hero h1{
+    font-size:3.5em;
 }
 
 
@@ -196,12 +197,12 @@ body{
 }
 
 .contentalbums {
-    
+     
     background-color: #F6F6F6;
 }
 .contentalbums h2 {
     padding-top: 20px;
-    font-family: futura;
+    font-family: 'roboto';
 	text-align: center;
 }
 #albumList p {
@@ -248,4 +249,7 @@ body{
     text-align: center;
     color: #222222;
     
+}
+br{
+    display:none;
 }

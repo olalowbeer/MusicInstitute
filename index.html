@@ -8,9 +8,8 @@
     <title>SCRT</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <!--     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">-->
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Pacifico|Josefin+Slab|" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
 
 </head>
@@ -20,8 +19,11 @@
         <nav>
             <span class="menu-btn" onclick="openNav()"></span>
             <div class="hero">
-                <a href="index.html"><h1>Music Instituto</h1></a>
-                <h2>The illest music right now</h2>
+                <a href="index.html"><h1>the<br> music<br> institute<br></h1></a>
+                  <button id="scrollArrow">
+                    <img src="images/arrowWhite.svg">
+                </button>
+              
               
                 <div id="myNav" class="overlay">
 
@@ -42,7 +44,7 @@
                 
 
             </div>
-
+                
             </div>
 
 
@@ -52,6 +54,7 @@
     <main>
         <div class="contentalbums">
             <div class="line"></div>
+              <h2 id="punchline">The illest music right now</h2>
 
             <div id="scrolldiv">
                 <button class="btn draw-border">CLICK HERE TO ADD STUFF</button></div>
@@ -199,6 +202,7 @@
 
     </main>
     <footer>
+    <button id="scrollUp"><img src="images/baseline-keyboard_arrow_up-24px.svg"></button>
     </footer>
     <script src="js/main.js"></script>
 </body>
