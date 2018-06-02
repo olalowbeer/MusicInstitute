@@ -1,0 +1,255 @@
+
+h1{
+    padding-left: 0px;
+    font-size: 2.6em;
+
+}
+
+.hero h1{
+    font-size:3.5em;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; 
+}
+.overlayContent {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25%; 
+    width: 100%;
+    text-align: center; 
+}
+
+.overlay a {
+    margin:50px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    transition: 0.3s; 
+}
+.overlay a:focus {
+    color: #f1f1f1;
+    
+}
+.overlayContent a {
+  position: relative;
+}
+.overlayContent a:focus, .overlayContent a:active {
+  cursor: pointer;
+}
+.overlayContent a:focus:after, .overlayContent a:active:after {
+  width: 100%;
+}
+.overlayContent a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  background-color:white;
+  width: 0;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.menu-btn {
+  background:url(../images/hamburgerWhite.png) no-repeat;
+  background-size: 50px 50px;
+  display:block;
+  height:50px; width:50px;
+  position:absolute;
+    margin:30px;
+ 
+}
+
+
+#topRated {
+	display: grid;
+    grid-template-columns: 50% 50%;
+}
+.topRated{
+    background-color: white;
+    margin: 10px;
+}
+
+#topRated img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#display {
+	display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+#display img{
+    
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+/******************playlists**************/
+
+#displayPlaylists {
+	display: grid;
+    grid-template-columns: 50% 50%;
+}
+.latestPlaylists{
+    background-color: white;
+    margin: 10px;
+}
+
+#displayPlaylists img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+/*****************artists**************/
+
+#displayArtists {
+	display: grid;
+    grid-template-columns: 50% 50%;
+}
+#artists{
+    background-color: white;
+    margin: 10px;
+}
+
+#artists img{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+/***********************albums*******************/
+
+body{
+    background-color: #F6F6F6;
+    
+}
+#deleteform{
+    font-family: monospace;
+}
+
+.albumhero{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+}
+
+.line{
+    margin: auto;
+}
+
+.formdiv {
+	text-align: center;
+    margin: auto;
+}
+.latestAlbum h3 {
+    font-family: futura;
+    margin-top: 0px;
+    margin-bottom: 2px;
+
+	
+}
+
+.latestAlbum h4 {
+    font-family: monospace;
+    margin: 2px;
+    padding: 0px;
+    opacity: 0.3;
+}
+.latestAlbum h4 span {
+    color: green;
+}
+
+.latestAlbum {
+    padding-top: 50px;
+
+}
+
+.contentalbums {
+     
+    background-color: #F6F6F6;
+}
+.contentalbums h2 {
+    padding-top: 20px;
+    font-family: 'roboto';
+	text-align: center;
+}
+#albumList p {
+    margin: 15px;
+
+}
+#albumList p span{
+    margin-top: 2px;
+    font-family: monospace;
+   font-style: italic;
+    opacity: 0.7;
+    
+}
+#albumList p span:hover{
+    color: red;
+    
+}
+
+#albumList {
+     display: grid;
+     grid-template-columns: auto auto;
+    background-color: #F6F6F6;
+    
+}
+#albumList img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.3);
+    min-width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: #F1452A; 
+
+}
+
+#topRated{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.latestAlbum{
+    padding-top: 80px;
+    text-align: center;
+    color: #222222;
+    
+}
+br{
+    display:none;
+}
