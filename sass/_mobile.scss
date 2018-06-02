@@ -1,0 +1,886 @@
+.hero {
+    background-color:#2A2B2B;
+     height:120px;
+  text-align: center;    
+    
+}
+.hero img{
+    height: 80px;
+    width: 50px;
+    padding-top: 10px;
+}
+
+input {
+    border-radius: 20px;
+    height: 20px;
+
+
+}
+a:link{
+    text-decoration: none;
+  }
+button{
+    cursor:pointer;
+}
+
+.hero h1{
+   font-size:34px;
+   font-family: futura;
+    text-align: center;
+    color:whitesmoke;
+    margin:0px;
+  padding-top:26px;
+   padding-left: 45px;
+}
+.desktopnav {
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 0.8em;
+
+}
+#textDiv > h2{
+    font-size: 3em;
+    font-family: pacifico;
+    margin: 0px;
+    
+
+    
+}
+
+nav > div.hero > h2{
+    font-size: 0.7em;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+    color: #D45756;
+    font-weight: 300;
+    padding: 0px;
+    margin: 20px;
+}
+
+
+#textDiv h3 {
+    font-size: 1.1em;
+	text-align: center;
+    font-family: Andale Mono, monospace;
+
+    
+}
+
+.search-container {
+
+  right: 2rem ;
+  top: 2rem;
+
+  .search-input{
+    top: 2rem;
+    right: 5rem;
+    height: 0.5rem;
+    width: 0;
+    border: 1px solid transparent;
+    transition: all .2s ease;
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    background-color: white;
+    opacity: 0;
+    color: #fff;
+    &:focus {
+      outline: none;
+      color: black;
+    }
+    }
+  .open {
+    width: 10rem;
+    border: 1px solid #36D96C;
+    transition: all 1s ease;
+    border-radius: 2%;
+    opacity: 1;
+  }
+}
+
+
+.overlay, .overlay2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+}
+
+.overlayContent, .overlayContent2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.showdesktop{
+    display: none;
+}
+.overlayContent > ul > li{
+
+    list-style-type: none;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 1.8em;
+        font-family: Andale Mono, monospace;
+        color: whitesmoke;
+        padding-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    
+    }
+
+    .overlayContent > ul > li:hover{
+
+        color: #D45756;
+        cursor: pointer;
+    
+        
+    }
+
+
+
+.overlay a {
+    margin: 20px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    transition: 0.3s;
+}
+
+.overlay a:focus {
+    color: #f1f1f1;
+
+}
+
+.overlayContent a {
+    position: relative;
+}
+
+.overlayContent a:focus,
+.overlayContent a:active {
+    cursor: pointer;
+}
+
+.overlayContent a:focus:after,
+.overlayContent a:active:after {
+    width: 100%;
+}
+
+.overlayContent a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    background-color: white;
+    width: 0;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.menu-btn {
+    background: url(../images/hamburgerWhite.png) no-repeat;
+    background-size: 50px 50px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin: 30px;
+
+
+}
+#scrollArrow{
+    background-color:transparent;
+    border:none;
+    outline: none;
+    cursor:pointer;
+    display:flex;
+	-webkit-animation: shake-vertical 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2s 3 both;
+	        animation: shake-vertical 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2s 3 both;
+
+ 
+}
+#scrollArrow img{
+    height:70px;
+    width:70px;
+    margin-top:100px;
+}
+#topRated {
+    height: 100vh;
+
+}
+
+#punchline {
+    color:orangered;
+    font-family: 'Josefin Slab', serif;
+}
+
+
+#latest > h2 {
+    margin-bottom: 50px;
+    font-family: Andale mono, monospace;
+    text-align: center;
+}
+
+#latest > h3 {
+    margin-top: 5px;
+    ;
+    font-size: 0.7em;
+    font-family: Andale mono, monospace;
+    text-align: center;
+    color: #D45756;
+}
+
+#scrolldiv {
+    text-align: center;
+}
+
+@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 1px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+    box-shadow: inset 0 0 0 $width $color;
+    color: $color;
+    transition: color $duration $duration/3;
+    position: relative;
+
+    &::before,
+    &::after {
+        border: 0 solid transparent;
+        box-sizing: border-box;
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+
+        #{$vertical}: 0;
+        #{$horizontal}: 0;
+    }
+
+    &::before {
+        $h-side: if($horizontal=='left', 'right', 'left');
+
+        border-#{$vertical}-width: $width;
+        border-#{$h-side}-width: $width;
+    }
+
+    &::after {
+        $v-side: if($vertical=='top', 'bottom', 'top');
+
+        border-#{$v-side}-width: $width;
+        border-#{$horizontal}-width: $width;
+    }
+
+    &:hover {
+        color: $hover;
+
+        &::before,
+        &::after {
+            border-color: $hover;
+            transition: border-color 0s, width $duration, height $duration;
+            width: 100%;
+            height: 100%;
+        }
+
+        &::before {
+            transition-delay: 0s, 0s, $duration;
+        }
+
+        &::after {
+            transition-delay: 0s, $duration, 0s;
+        }
+    }
+}
+
+.draw-border, #commentButton {
+    @include btn-border-drawing(black, red, 2px, bottom, right);
+} 
+.btn {
+    margin: 20px;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 0.8;
+    font: 400 0.6rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+
+    &:focus {
+        outline: 1px dotted #55d7dc;
+    }
+}
+
+/*******************topratedfrontpage************/
+
+#topRated {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+#topRated img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    background-color: #F1452A;
+    object-fit: cover;
+
+}
+
+body > header > nav > div.hero > h1 {
+    padding-top: 15px;
+}
+
+/********************Playlist****************/
+
+#displayPlaylists {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.latestPlaylists {
+    padding-top: 80px;
+    text-align: center;
+}
+
+#playlistSongs h3 {
+    font-family: futura;
+    margin-top: 0px;
+    margin-bottom: 2px;
+
+
+}
+
+#playlistSongs > p > span {
+    font-family: 'roboto';
+}
+
+
+#playlistSongs h4 {
+    font-family: monospace;
+    margin: 20px;
+    padding: 0px;
+    opacity: 0.3;
+}
+
+
+#displayPlaylists img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    background-color: #F1452A;
+    object-fit: cover;
+
+}
+.latestPlaylists img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/****** artist.html ********/
+
+#displayArtists {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+#artists {
+    padding-top: 80px;
+    text-align: center;
+}
+
+#artists h3 {
+    font-family: futura;
+    margin-top: 0px;
+    margin-bottom: 2px;
+
+
+}
+
+
+#artists h4 {
+    font-family: monospace;
+    margin: 20px;
+    padding: 0px;
+    opacity: 0.3;
+}
+
+
+#artists img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    height: 350px; //overflow:auto;
+    margin: 10px;
+}
+
+#artistInformationWrapper > a > svg > path {
+    color: #393D3F;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+
+}
+
+#artistInformationWrapper {
+    padding-bottom: 10px;
+}
+
+/****** end artist.html ********/
+
+/********************Albums*****************/
+
+body {
+    background-color: #F7F7F7;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+#deleteform {
+    font-family: monospace;
+}
+
+.albumhero {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+}
+
+.line {
+    margin: auto;
+}
+
+.desktopnav {
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 0.8em;
+
+}
+
+.formdiv {
+    text-align: center;
+    margin: auto;
+}
+
+.latestAlbum h3 {
+    font-family: futura;
+    margin-top: 0px;
+    margin-bottom: 2px;
+
+
+
+}
+
+.latestAlbum h4 {
+    font-family: monospace;
+    margin: 2px;
+    padding: 0px;
+    opacity: 0.3;
+}
+
+
+
+.contentalbums {
+
+    background-color: #F6F6F6;
+}
+
+.contentalbums h2 {
+    padding-top: 20px;
+    font-family: 'roboto';
+    text-align: center;
+}
+
+#albumList p {
+    margin: 15px;
+
+}
+
+#albumList p span {
+    margin-top: 2px;
+    font-family: monospace;
+    font-style: italic;
+    opacity: 0.7;
+
+}
+
+#albumList p span:hover {
+    color: red;
+
+}
+
+#display {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
+#display img {
+
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin: 10px;
+
+}
+
+#albumList {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #F6F6F6;
+
+}
+
+#albumList img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    min-width: 350px;
+    height: 350px;
+    margin: 10px;
+    background-color: #F1452A;
+
+}
+
+
+.albumInfo {
+    padding-bottom: 10px;
+
+
+}
+
+.latestAlbum {
+    padding-top: 20px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+    color: #222222;
+
+}
+
+.latestAlbum img {
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*************addstuff*************/
+
+.addstuffwrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/************form***************/
+
+#addNewWrapper {
+    padding-top: 70px;
+}
+
+#addForm {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 2px;
+    padding: 20px;
+    margin:10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#addForm h1 {
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #5C5C5C;
+    font-size: x-large;
+}
+
+#addForm ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#addForm li,
+#addForm > label {
+    display: block;
+    padding: 9px;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    
+}
+
+#addForm > li.ButtonList,
+#addForm > li.deleteButtonList,
+{
+    border: none;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-top: -5%;
+}
+
+#addForm li > label {
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#addForm input[type="text"],
+#addForm input[type="date"],
+#addForm input[type="datetime"],
+#addForm input[type="email"],
+#addForm input[type="number"],
+#addForm input[type="search"],
+#addForm input[type="time"],
+#addForm input[type="url"],
+#addForm input[type="password"],
+#addForm textarea,
+#addForm select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#addForm li > span {
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+#addForm textarea {
+    resize: none;
+}
+
+#submitPlaylist,
+#submitArtist,
+#submitAlbum,
+#deleteButtonPlaylist,
+#deleteButtonArtist,
+#deleteButtonAlbum
+{
+    background: black;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10%;
+    border-radius: 3px;
+    color: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+/***************form end*******************/
+
+
+
+/********commentform********/
+
+
+#commentForm {
+    display: none;
+    padding: 2em;
+    width: 600px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%)
+}
+
+#commentPlaylistId,
+#commentUser {
+    height: 20px;
+    margin: 10px;
+    padding:5px;
+    margin-top:80px;
+    border-radius:0px;
+}
+
+#commentOnPlaylist {
+    height: 70px;
+    width: 300px;
+    margin: 10px;
+   
+    display: flex;
+    flex-direction: column;
+
+}
+
+#submitComment {
+   text-align: center;
+    margin: 10px;   
+
+    background-color: white;
+    color: black;
+    border: none;
+    height: 40px;
+    line-height:40px;
+
+}
+#submitComment:hover{
+    cursor:pointer;
+}
+#commentForm h2{
+    color:white;
+}
+#commentButton{
+    margin-bottom:10px;
+    font-family: 'roboto';
+    padding: 7px 17px 7px 17px;
+    margin-bottom: 10%;
+    font-size: 0.7em;
+    background-color: transparent;
+    
+}
+#closeWindow{
+    border-style:none;
+}
+
+footer{ 
+    text-align: right;
+}
+#scrollUp{
+    background-color: transparent;
+    border:none;
+    text-align: center;
+    outline: none;
+    cursor:pointer;
+	
+}
+
+#scrollUp img{
+    heigth:80px;
+    width:80px;
+    
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-6-1 18:10:17
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shake-vertical
+ * ----------------------------------------
+ */
+@-webkit-keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+            transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
+  }
+}
+@keyframes shake-vertical {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
+  80% {
+    -webkit-transform: translateY(6.4px);
+            transform: translateY(6.4px);
+  }
+  90% {
+    -webkit-transform: translateY(-6.4px);
+            transform: translateY(-6.4px);
+  }
+}
